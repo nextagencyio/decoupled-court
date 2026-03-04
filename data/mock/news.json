@@ -1,0 +1,138 @@
+{
+  "data": {
+    "nodeNewsItems": {
+      "__typename": "NodeNewsConnection",
+      "nodes": [
+        {
+          "__typename": "NodeNews",
+          "id": "news-ruling",
+          "title": "Court Issues Landmark Ruling on Digital Privacy Rights",
+          "path": "/news/landmark-privacy-ruling",
+          "body": {
+            "processed": "<p>The District Court of Appeals today issued a landmark ruling establishing new standards for digital privacy in the workplace. The unanimous decision, authored by Chief Judge Harris, holds that employees have a reasonable expectation of privacy in personal communications on employer-provided devices.</p><p>\"This ruling reflects the evolving nature of privacy in the digital age,\" Chief Judge Harris wrote in the majority opinion.</p><p>The decision is expected to have significant implications for employment law and digital privacy cases nationwide.</p>",
+            "summary": "The District Court of Appeals today issued a landmark ruling establishing new standards for digital privacy in the workplace. The unanimous decision, authored by Chief Judge Harris, holds that employe"
+          },
+          "category": [
+            {
+              "id": "opinions",
+              "name": "opinions"
+            }
+          ],
+          "featured": true,
+          "image": {
+            "url": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=80",
+            "alt": "Court ruling on digital privacy",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeNews",
+          "id": "news-efiling",
+          "title": "Court Launches New Electronic Filing System",
+          "path": "/news/electronic-filing-launch",
+          "body": {
+            "processed": "<p>The District Court of Appeals is pleased to announce the launch of its new electronic filing (e-filing) system. Effective April 1, 2026, all civil and criminal filings may be submitted electronically through the court's secure online portal.</p><p>The new system will reduce processing times, eliminate paper waste, and provide attorneys and litigants with 24/7 access to file documents.</p><p>Training sessions will be held throughout March for attorneys and court staff.</p>",
+            "summary": "The District Court of Appeals is pleased to announce the launch of its new electronic filing (e-filing) system. Effective April 1, 2026, all civil and criminal filings may be submitted electronically "
+          },
+          "category": [
+            {
+              "id": "announcements",
+              "name": "announcements"
+            }
+          ],
+          "featured": true,
+          "image": {
+            "url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+            "alt": "Electronic filing system",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeNews",
+          "id": "news-judicial-conference",
+          "title": "Annual Judicial Conference Addresses Court Modernization",
+          "path": "/news/annual-judicial-conference",
+          "body": {
+            "processed": "<p>Judges and court administrators gathered this week for the annual Judicial Conference, focusing on modernization efforts and access to justice initiatives. Chief Judge Harris delivered the keynote address highlighting the court's progress in reducing case backlogs and implementing technology solutions.</p><p>Key topics included AI-assisted legal research, remote hearing procedures, and expanding pro bono services.</p>",
+            "summary": "Judges and court administrators gathered this week for the annual Judicial Conference, focusing on modernization efforts and access to justice initiatives. Chief Judge Harris delivered the keynote add"
+          },
+          "category": [
+            {
+              "id": "press-releases",
+              "name": "press-releases"
+            }
+          ],
+          "featured": false,
+          "image": {
+            "url": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=800&q=80",
+            "alt": "Judicial Conference",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

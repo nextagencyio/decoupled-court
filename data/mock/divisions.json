@@ -1,0 +1,144 @@
+{
+  "data": {
+    "nodeDivisions": {
+      "__typename": "NodeDivisionConnection",
+      "nodes": [
+        {
+          "__typename": "NodeDivision",
+          "id": "division-civil",
+          "title": "Civil Division",
+          "path": "/divisions/civil-division",
+          "body": {
+            "processed": "<p>The Civil Division handles a wide range of civil matters including contract disputes, personal injury cases, property disputes, and administrative appeals. The division processes over 5,000 cases annually.</p><h2>Jurisdiction</h2><ul><li>Contract disputes over $25,000</li><li>Personal injury and tort claims</li><li>Real property disputes</li><li>Administrative agency appeals</li><li>Declaratory judgment actions</li></ul>",
+            "summary": "The Civil Division handles a wide range of civil matters including contract disputes, personal injury cases, property disputes, and administrative appeals. The division processes over 5,000 cases annu"
+          },
+          "chiefJudge": "Judge Margaret O'Connor",
+          "location": "4th Floor, Main Courthouse",
+          "phone": "(555) 100-2000",
+          "divisionType": [
+            {
+              "id": "civil-division",
+              "name": "civil-division"
+            }
+          ],
+          "image": {
+            "url": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=80",
+            "alt": "Civil Division courtroom",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeDivision",
+          "id": "division-criminal",
+          "title": "Criminal Division",
+          "path": "/divisions/criminal-division",
+          "body": {
+            "processed": "<p>The Criminal Division adjudicates felony and misdemeanor cases within the court's jurisdiction. The division ensures the rights of defendants while maintaining public safety through fair sentencing.</p><h2>Case Types</h2><ul><li>Felony prosecutions</li><li>Misdemeanor cases</li><li>Appeals from lower courts</li><li>Probation violations</li><li>Sentencing hearings</li></ul>",
+            "summary": "The Criminal Division adjudicates felony and misdemeanor cases within the court's jurisdiction. The division ensures the rights of defendants while maintaining public safety through fair sentencing.Ca"
+          },
+          "chiefJudge": "Judge Robert Nakamura",
+          "location": "3rd Floor, Main Courthouse",
+          "phone": "(555) 100-3000",
+          "divisionType": [
+            {
+              "id": "criminal-division",
+              "name": "criminal-division"
+            }
+          ],
+          "image": {
+            "url": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=800&q=80",
+            "alt": "Criminal Division",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeDivision",
+          "id": "division-family",
+          "title": "Family Division",
+          "path": "/divisions/family-division",
+          "body": {
+            "processed": "<p>The Family Division handles matters involving family relationships including divorce, child custody, adoption, and juvenile proceedings. The division emphasizes mediation and alternative dispute resolution.</p><h2>Services</h2><ul><li>Divorce and dissolution</li><li>Child custody and support</li><li>Adoption proceedings</li><li>Juvenile matters</li><li>Domestic violence protection orders</li></ul>",
+            "summary": "The Family Division handles matters involving family relationships including divorce, child custody, adoption, and juvenile proceedings. The division emphasizes mediation and alternative dispute resol"
+          },
+          "chiefJudge": "Judge David Washington",
+          "location": "2nd Floor, Main Courthouse",
+          "phone": "(555) 100-4000",
+          "divisionType": [
+            {
+              "id": "family-division",
+              "name": "family-division"
+            }
+          ],
+          "image": {
+            "url": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80",
+            "alt": "Family Division",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

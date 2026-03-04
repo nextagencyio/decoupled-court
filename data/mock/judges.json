@@ -1,0 +1,201 @@
+{
+  "data": {
+    "nodeJudges": {
+      "__typename": "NodeJudgeConnection",
+      "nodes": [
+        {
+          "__typename": "NodeJudge",
+          "id": "judge-harris",
+          "title": "Chief Judge Patricia Harris",
+          "path": "/judges/chief-judge-harris",
+          "body": {
+            "processed": "<p>Chief Judge Harris has served on the District Court of Appeals since 2010. She was elevated to Chief Judge in 2020. Prior to her appointment, she served as a federal prosecutor and practiced commercial litigation for 15 years.</p><p>Chief Judge Harris is known for her expertise in constitutional law and administrative procedure. She holds a J.D. from Yale Law School and a B.A. from Howard University.</p>",
+            "summary": "Chief Judge Harris has served on the District Court of Appeals since 2010. She was elevated to Chief Judge in 2020. Prior to her appointment, she served as a federal prosecutor and practiced commercia"
+          },
+          "position": "Chief Judge",
+          "division": [
+            {
+              "id": "appellate-division",
+              "name": "appellate-division"
+            }
+          ],
+          "chambers": "Courtroom 1, 5th Floor",
+          "phone": "(555) 100-1001",
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
+            "alt": "Chief Judge Patricia Harris",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "appointedDate": {
+            "timestamp": 1276578000
+          }
+        },
+        {
+          "__typename": "NodeJudge",
+          "id": "judge-nakamura",
+          "title": "Judge Robert Nakamura",
+          "path": "/judges/judge-nakamura",
+          "body": {
+            "processed": "<p>Judge Nakamura joined the court in 2015 after a distinguished career in criminal law. He previously served as a public defender and later as a state court judge. He is recognized for his commitment to fair sentencing and criminal justice reform.</p><p>Judge Nakamura earned his J.D. from Stanford Law School and his B.A. from UCLA.</p>",
+            "summary": "Judge Nakamura joined the court in 2015 after a distinguished career in criminal law. He previously served as a public defender and later as a state court judge. He is recognized for his commitment to"
+          },
+          "position": "Associate Judge",
+          "division": [
+            {
+              "id": "criminal-division",
+              "name": "criminal-division"
+            }
+          ],
+          "chambers": "Courtroom 4, 3rd Floor",
+          "phone": "(555) 100-1004",
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+            "alt": "Judge Robert Nakamura",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "appointedDate": {
+            "timestamp": 1441083600
+          }
+        },
+        {
+          "__typename": "NodeJudge",
+          "id": "judge-oconnor",
+          "title": "Judge Margaret O'Connor",
+          "path": "/judges/judge-oconnor",
+          "body": {
+            "processed": "<p>Judge O'Connor specializes in civil litigation and has served on the court since 2012. Before her appointment, she was a partner at a leading law firm where she handled complex commercial disputes and class action lawsuits.</p><p>She holds a J.D. from Columbia Law School and a B.A. from Georgetown University.</p>",
+            "summary": "Judge O'Connor specializes in civil litigation and has served on the court since 2012. Before her appointment, she was a partner at a leading law firm where she handled complex commercial disputes and"
+          },
+          "position": "Associate Judge",
+          "division": [
+            {
+              "id": "civil-division",
+              "name": "civil-division"
+            }
+          ],
+          "chambers": "Courtroom 2, 4th Floor",
+          "phone": "(555) 100-1002",
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+            "alt": "Judge Margaret O'Connor",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "appointedDate": {
+            "timestamp": 1332219600
+          }
+        },
+        {
+          "__typename": "NodeJudge",
+          "id": "judge-washington",
+          "title": "Judge David Washington",
+          "path": "/judges/judge-washington",
+          "body": {
+            "processed": "<p>Judge Washington has been a member of the Family Division since 2018. He brings extensive experience in family law, having practiced for over 20 years before joining the bench. He is a leading voice on juvenile justice and family court reform.</p><p>He received his J.D. from Harvard Law School and his B.A. from Morehouse College.</p>",
+            "summary": "Judge Washington has been a member of the Family Division since 2018. He brings extensive experience in family law, having practiced for over 20 years before joining the bench. He is a leading voice o"
+          },
+          "position": "Associate Judge",
+          "division": [
+            {
+              "id": "family-division",
+              "name": "family-division"
+            }
+          ],
+          "chambers": "Courtroom 6, 2nd Floor",
+          "phone": "(555) 100-1006",
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+            "alt": "Judge David Washington",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "appointedDate": {
+            "timestamp": 1515564000
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "data": {
+    "nodeResources": {
+      "__typename": "NodeResourceConnection",
+      "nodes": [
+        {
+          "__typename": "NodeResource",
+          "id": "resource-civil-complaint",
+          "title": "Civil Complaint Form",
+          "path": "/resources/civil-complaint-form",
+          "body": {
+            "processed": "<p>Use this form to file a civil complaint in the District Court of Appeals. The form must be completed in full and filed with the Clerk of Courts along with the required filing fee.</p><h2>Instructions</h2><ul><li>Complete all required fields</li><li>Attach supporting documentation</li><li>File the original plus two copies</li><li>Pay the filing fee ($350)</li></ul>",
+            "summary": "Use this form to file a civil complaint in the District Court of Appeals. The form must be completed in full and filed with the Clerk of Courts along with the required filing fee.InstructionsComplete "
+          },
+          "resourceType": [
+            {
+              "id": "court-forms",
+              "name": "court-forms"
+            }
+          ],
+          "fileUrl": "https://example.com/forms/civil-complaint.pdf",
+          "lastUpdated": {
+            "timestamp": 1768456800
+          },
+          "image": {
+            "url": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80",
+            "alt": "Civil Complaint Form",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeResource",
+          "id": "resource-filing-guide",
+          "title": "Pro Se Filing Guide",
+          "path": "/resources/pro-se-filing-guide",
+          "body": {
+            "processed": "<p>This guide is designed for individuals who wish to represent themselves (pro se) in court proceedings. It covers the basics of court procedure, filing requirements, and courtroom etiquette.</p><h2>Topics Covered</h2><ul><li>Understanding court procedures</li><li>Filing requirements and deadlines</li><li>Courtroom conduct</li><li>Evidence rules basics</li><li>Appeal procedures</li></ul>",
+            "summary": "This guide is designed for individuals who wish to represent themselves (pro se) in court proceedings. It covers the basics of court procedure, filing requirements, and courtroom etiquette.Topics Cove"
+          },
+          "resourceType": [
+            {
+              "id": "legal-guides",
+              "name": "legal-guides"
+            }
+          ],
+          "fileUrl": "https://example.com/guides/pro-se-guide.pdf",
+          "lastUpdated": {
+            "timestamp": 1761973200
+          },
+          "image": {
+            "url": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=80",
+            "alt": "Pro Se Filing Guide",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeResource",
+          "id": "resource-fee-schedule",
+          "title": "Court Fee Schedule 2026",
+          "path": "/resources/fee-schedule",
+          "body": {
+            "processed": "<p>The following fee schedule is effective January 1, 2026. All fees are payable by check, money order, or credit card at the Clerk's Office.</p><h2>Filing Fees</h2><ul><li>Civil Complaint: $350</li><li>Criminal Appeal: $500</li><li>Family Law Petition: $300</li><li>Motion Filing: $75</li><li>Certified Copy: $25 per document</li></ul>",
+            "summary": "The following fee schedule is effective January 1, 2026. All fees are payable by check, money order, or credit card at the Clerk's Office.Filing FeesCivil Complaint: $350Criminal Appeal: $500Family La"
+          },
+          "resourceType": [
+            {
+              "id": "fee-schedules",
+              "name": "fee-schedules"
+            }
+          ],
+          "lastUpdated": {
+            "timestamp": 1767247200
+          },
+          "image": {
+            "url": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&q=80",
+            "alt": "Court Fee Schedule",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeResource",
+          "id": "resource-appeal-instructions",
+          "title": "Appeal Filing Instructions",
+          "path": "/resources/appeal-filing-instructions",
+          "body": {
+            "processed": "<p>This document provides step-by-step instructions for filing an appeal with the District Court of Appeals. Appeals must be filed within 30 days of the final judgment.</p><h2>Steps to File</h2><ul><li>Obtain the Notice of Appeal form</li><li>Complete and file within 30 days</li><li>Order trial court transcripts</li><li>File opening brief within 60 days</li><li>Serve all parties</li></ul>",
+            "summary": "This document provides step-by-step instructions for filing an appeal with the District Court of Appeals. Appeals must be filed within 30 days of the final judgment.Steps to FileObtain the Notice of A"
+          },
+          "resourceType": [
+            {
+              "id": "filing-instructions",
+              "name": "filing-instructions"
+            }
+          ],
+          "fileUrl": "https://example.com/instructions/appeal-filing.pdf",
+          "lastUpdated": {
+            "timestamp": 1765778400
+          },
+          "image": {
+            "url": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=800&q=80",
+            "alt": "Appeal Filing Instructions",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

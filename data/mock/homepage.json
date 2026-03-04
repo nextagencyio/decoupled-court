@@ -1,0 +1,59 @@
+{
+  "data": {
+    "nodeHomepages": {
+      "__typename": "NodeHomepageConnection",
+      "nodes": [
+        {
+          "__typename": "NodeHomepage",
+          "id": "homepage",
+          "title": "Welcome to the District Court of Appeals",
+          "path": "/homepage",
+          "heroTitle": "Justice for All",
+          "heroSubtitle": "Fair, Impartial, and Timely",
+          "heroDescription": {
+            "processed": "<p>The District Court of Appeals is committed to the fair and impartial administration of justice. We provide accessible court services and resolve disputes through the rule of law.</p>",
+            "summary": "The District Court of Appeals is committed to the fair and impartial administration of justice. We provide accessible court services and resolve disputes through the rule of law."
+          },
+          "statsItems": [
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-cases",
+              "title": "",
+              "number": "12,000+",
+              "label": "Cases Resolved Annually"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-judges",
+              "title": "",
+              "number": "24",
+              "label": "Sitting Judges"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-divisions",
+              "title": "",
+              "number": "4",
+              "label": "Court Divisions"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-satisfaction",
+              "title": "",
+              "number": "98%",
+              "label": "Timely Disposition Rate"
+            }
+          ],
+          "featuredResourcesTitle": "Court Resources",
+          "ctaTitle": "Need to File a Case?",
+          "ctaDescription": {
+            "processed": "<p>Whether you are filing a new case, responding to a complaint, or seeking information about court procedures, our clerk's office is here to assist you.</p>",
+            "summary": "Whether you are filing a new case, responding to a complaint, or seeking information about court procedures, our clerk's office is here to assist you."
+          },
+          "ctaPrimary": "File a Case",
+          "ctaSecondary": "Find Forms"
+        }
+      ]
+    }
+  }
+}

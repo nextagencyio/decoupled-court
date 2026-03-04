@@ -1,0 +1,547 @@
+{
+  "model": [
+    {
+      "bundle": "homepage",
+      "label": "Homepage",
+      "description": "Court homepage with hero, featured resources, news, and case information",
+      "fields": [
+        {
+          "id": "hero_title",
+          "label": "Hero Title",
+          "type": "string",
+          "description": "Main headline (e.g., 'Justice for All')"
+        },
+        {
+          "id": "hero_subtitle",
+          "label": "Hero Subtitle",
+          "type": "string",
+          "description": "Secondary text below the title"
+        },
+        {
+          "id": "hero_description",
+          "label": "Hero Description",
+          "type": "text",
+          "description": "Longer description for the hero section"
+        },
+        {
+          "id": "stats_items",
+          "label": "Statistics",
+          "type": "paragraph(stat_item)[]",
+          "description": "Key court statistics (cases resolved, judges, etc.)"
+        },
+        {
+          "id": "featured_resources_title",
+          "label": "Featured Resources Title",
+          "type": "string"
+        },
+        {
+          "id": "cta_title",
+          "label": "CTA Section Title",
+          "type": "string"
+        },
+        {
+          "id": "cta_description",
+          "label": "CTA Description",
+          "type": "text"
+        },
+        {
+          "id": "cta_primary",
+          "label": "Primary CTA Text",
+          "type": "string"
+        },
+        {
+          "id": "cta_secondary",
+          "label": "Secondary CTA Text",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "bundle": "judge",
+      "label": "Judge",
+      "description": "Judges and judicial officers of the court",
+      "body": true,
+      "fields": [
+        {
+          "id": "position",
+          "label": "Position/Title",
+          "type": "string",
+          "description": "Chief Judge, Associate Judge, etc."
+        },
+        {
+          "id": "division",
+          "label": "Division",
+          "type": "term(divisions)[]"
+        },
+        {
+          "id": "chambers",
+          "label": "Chambers",
+          "type": "string"
+        },
+        {
+          "id": "phone",
+          "label": "Phone",
+          "type": "string"
+        },
+        {
+          "id": "photo",
+          "label": "Photo",
+          "type": "image"
+        },
+        {
+          "id": "appointed_date",
+          "label": "Date Appointed",
+          "type": "datetime"
+        }
+      ]
+    },
+    {
+      "bundle": "division",
+      "label": "Court Division",
+      "description": "Divisions and departments of the court",
+      "body": true,
+      "fields": [
+        {
+          "id": "chief_judge",
+          "label": "Chief Judge",
+          "type": "string"
+        },
+        {
+          "id": "location",
+          "label": "Location",
+          "type": "string"
+        },
+        {
+          "id": "phone",
+          "label": "Phone",
+          "type": "string"
+        },
+        {
+          "id": "division_type",
+          "label": "Division Type",
+          "type": "term(divisions)[]"
+        },
+        {
+          "id": "image",
+          "label": "Division Image",
+          "type": "image"
+        }
+      ]
+    },
+    {
+      "bundle": "resource",
+      "label": "Court Resource",
+      "description": "Legal resources, forms, and guides for court users",
+      "body": true,
+      "fields": [
+        {
+          "id": "resource_type",
+          "label": "Resource Type",
+          "type": "term(resource_types)[]"
+        },
+        {
+          "id": "file_url",
+          "label": "File URL",
+          "type": "string"
+        },
+        {
+          "id": "last_updated",
+          "label": "Last Updated",
+          "type": "datetime"
+        },
+        {
+          "id": "image",
+          "label": "Resource Image",
+          "type": "image"
+        }
+      ]
+    },
+    {
+      "bundle": "news",
+      "label": "News Article",
+      "description": "Court news, opinions, and announcements",
+      "body": true,
+      "fields": [
+        {
+          "id": "image",
+          "label": "Featured Image",
+          "type": "image"
+        },
+        {
+          "id": "category",
+          "label": "Category",
+          "type": "term(news_categories)[]"
+        },
+        {
+          "id": "featured",
+          "label": "Featured",
+          "type": "bool"
+        }
+      ]
+    },
+    {
+      "bundle": "page",
+      "label": "Basic Page",
+      "description": "Static content pages for about, contact, etc.",
+      "body": true,
+      "fields": []
+    },
+    {
+      "entity": "paragraph",
+      "bundle": "stat_item",
+      "label": "Statistic Item",
+      "description": "A key statistic with number and label",
+      "fields": [
+        {
+          "id": "number",
+          "label": "Number",
+          "type": "string!",
+          "description": "The statistic value (e.g., '12,000+', '98%')"
+        },
+        {
+          "id": "label",
+          "label": "Label",
+          "type": "string!",
+          "description": "What the number represents"
+        }
+      ]
+    }
+  ],
+  "taxonomies": [
+    {
+      "vocabulary": "divisions",
+      "label": "Court Divisions",
+      "terms": [
+        { "name": "Civil Division" },
+        { "name": "Criminal Division" },
+        { "name": "Family Division" },
+        { "name": "Appellate Division" }
+      ]
+    },
+    {
+      "vocabulary": "resource_types",
+      "label": "Resource Types",
+      "terms": [
+        { "name": "Court Forms" },
+        { "name": "Legal Guides" },
+        { "name": "Filing Instructions" },
+        { "name": "Fee Schedules" }
+      ]
+    },
+    {
+      "vocabulary": "news_categories",
+      "label": "News Categories",
+      "terms": [
+        { "name": "Opinions" },
+        { "name": "Announcements" },
+        { "name": "Press Releases" },
+        { "name": "Court Orders" }
+      ]
+    }
+  ],
+  "content": [
+    {
+      "id": "stat-cases",
+      "type": "paragraph.stat_item",
+      "values": {
+        "number": "12,000+",
+        "label": "Cases Resolved Annually"
+      }
+    },
+    {
+      "id": "stat-judges",
+      "type": "paragraph.stat_item",
+      "values": {
+        "number": "24",
+        "label": "Sitting Judges"
+      }
+    },
+    {
+      "id": "stat-divisions",
+      "type": "paragraph.stat_item",
+      "values": {
+        "number": "4",
+        "label": "Court Divisions"
+      }
+    },
+    {
+      "id": "stat-satisfaction",
+      "type": "paragraph.stat_item",
+      "values": {
+        "number": "98%",
+        "label": "Timely Disposition Rate"
+      }
+    },
+    {
+      "id": "homepage",
+      "type": "node.homepage",
+      "path": "/homepage",
+      "values": {
+        "title": "Welcome to the District Court of Appeals",
+        "hero_title": "Justice for All",
+        "hero_subtitle": "Fair, Impartial, and Timely",
+        "hero_description": "<p>The District Court of Appeals is committed to the fair and impartial administration of justice. We provide accessible court services and resolve disputes through the rule of law.</p>",
+        "stats_items": [
+          "@stat-cases",
+          "@stat-judges",
+          "@stat-divisions",
+          "@stat-satisfaction"
+        ],
+        "featured_resources_title": "Court Resources",
+        "cta_title": "Need to File a Case?",
+        "cta_description": "<p>Whether you are filing a new case, responding to a complaint, or seeking information about court procedures, our clerk's office is here to assist you.</p>",
+        "cta_primary": "File a Case",
+        "cta_secondary": "Find Forms"
+      }
+    },
+    {
+      "id": "judge-harris",
+      "type": "node.judge",
+      "path": "/judges/chief-judge-harris",
+      "values": {
+        "title": "Chief Judge Patricia Harris",
+        "body": "<p>Chief Judge Harris has served on the District Court of Appeals since 2010. She was elevated to Chief Judge in 2020. Prior to her appointment, she served as a federal prosecutor and practiced commercial litigation for 15 years.</p><p>Chief Judge Harris is known for her expertise in constitutional law and administrative procedure. She holds a J.D. from Yale Law School and a B.A. from Howard University.</p>",
+        "position": "Chief Judge",
+        "division": ["appellate-division"],
+        "chambers": "Courtroom 1, 5th Floor",
+        "phone": "(555) 100-1001",
+        "photo": {
+          "uri": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
+          "alt": "Chief Judge Patricia Harris"
+        },
+        "appointed_date": "2010-06-15T00:00:00"
+      }
+    },
+    {
+      "id": "judge-nakamura",
+      "type": "node.judge",
+      "path": "/judges/judge-nakamura",
+      "values": {
+        "title": "Judge Robert Nakamura",
+        "body": "<p>Judge Nakamura joined the court in 2015 after a distinguished career in criminal law. He previously served as a public defender and later as a state court judge. He is recognized for his commitment to fair sentencing and criminal justice reform.</p><p>Judge Nakamura earned his J.D. from Stanford Law School and his B.A. from UCLA.</p>",
+        "position": "Associate Judge",
+        "division": ["criminal-division"],
+        "chambers": "Courtroom 4, 3rd Floor",
+        "phone": "(555) 100-1004",
+        "photo": {
+          "uri": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+          "alt": "Judge Robert Nakamura"
+        },
+        "appointed_date": "2015-09-01T00:00:00"
+      }
+    },
+    {
+      "id": "judge-oconnor",
+      "type": "node.judge",
+      "path": "/judges/judge-oconnor",
+      "values": {
+        "title": "Judge Margaret O'Connor",
+        "body": "<p>Judge O'Connor specializes in civil litigation and has served on the court since 2012. Before her appointment, she was a partner at a leading law firm where she handled complex commercial disputes and class action lawsuits.</p><p>She holds a J.D. from Columbia Law School and a B.A. from Georgetown University.</p>",
+        "position": "Associate Judge",
+        "division": ["civil-division"],
+        "chambers": "Courtroom 2, 4th Floor",
+        "phone": "(555) 100-1002",
+        "photo": {
+          "uri": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+          "alt": "Judge Margaret O'Connor"
+        },
+        "appointed_date": "2012-03-20T00:00:00"
+      }
+    },
+    {
+      "id": "judge-washington",
+      "type": "node.judge",
+      "path": "/judges/judge-washington",
+      "values": {
+        "title": "Judge David Washington",
+        "body": "<p>Judge Washington has been a member of the Family Division since 2018. He brings extensive experience in family law, having practiced for over 20 years before joining the bench. He is a leading voice on juvenile justice and family court reform.</p><p>He received his J.D. from Harvard Law School and his B.A. from Morehouse College.</p>",
+        "position": "Associate Judge",
+        "division": ["family-division"],
+        "chambers": "Courtroom 6, 2nd Floor",
+        "phone": "(555) 100-1006",
+        "photo": {
+          "uri": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+          "alt": "Judge David Washington"
+        },
+        "appointed_date": "2018-01-10T00:00:00"
+      }
+    },
+    {
+      "id": "division-civil",
+      "type": "node.division",
+      "path": "/divisions/civil-division",
+      "values": {
+        "title": "Civil Division",
+        "body": "<p>The Civil Division handles a wide range of civil matters including contract disputes, personal injury cases, property disputes, and administrative appeals. The division processes over 5,000 cases annually.</p><h2>Jurisdiction</h2><ul><li>Contract disputes over $25,000</li><li>Personal injury and tort claims</li><li>Real property disputes</li><li>Administrative agency appeals</li><li>Declaratory judgment actions</li></ul>",
+        "chief_judge": "Judge Margaret O'Connor",
+        "location": "4th Floor, Main Courthouse",
+        "phone": "(555) 100-2000",
+        "division_type": ["civil-division"],
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=80",
+          "alt": "Civil Division courtroom"
+        }
+      }
+    },
+    {
+      "id": "division-criminal",
+      "type": "node.division",
+      "path": "/divisions/criminal-division",
+      "values": {
+        "title": "Criminal Division",
+        "body": "<p>The Criminal Division adjudicates felony and misdemeanor cases within the court's jurisdiction. The division ensures the rights of defendants while maintaining public safety through fair sentencing.</p><h2>Case Types</h2><ul><li>Felony prosecutions</li><li>Misdemeanor cases</li><li>Appeals from lower courts</li><li>Probation violations</li><li>Sentencing hearings</li></ul>",
+        "chief_judge": "Judge Robert Nakamura",
+        "location": "3rd Floor, Main Courthouse",
+        "phone": "(555) 100-3000",
+        "division_type": ["criminal-division"],
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=800&q=80",
+          "alt": "Criminal Division"
+        }
+      }
+    },
+    {
+      "id": "division-family",
+      "type": "node.division",
+      "path": "/divisions/family-division",
+      "values": {
+        "title": "Family Division",
+        "body": "<p>The Family Division handles matters involving family relationships including divorce, child custody, adoption, and juvenile proceedings. The division emphasizes mediation and alternative dispute resolution.</p><h2>Services</h2><ul><li>Divorce and dissolution</li><li>Child custody and support</li><li>Adoption proceedings</li><li>Juvenile matters</li><li>Domestic violence protection orders</li></ul>",
+        "chief_judge": "Judge David Washington",
+        "location": "2nd Floor, Main Courthouse",
+        "phone": "(555) 100-4000",
+        "division_type": ["family-division"],
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80",
+          "alt": "Family Division"
+        }
+      }
+    },
+    {
+      "id": "resource-civil-complaint",
+      "type": "node.resource",
+      "path": "/resources/civil-complaint-form",
+      "values": {
+        "title": "Civil Complaint Form",
+        "body": "<p>Use this form to file a civil complaint in the District Court of Appeals. The form must be completed in full and filed with the Clerk of Courts along with the required filing fee.</p><h2>Instructions</h2><ul><li>Complete all required fields</li><li>Attach supporting documentation</li><li>File the original plus two copies</li><li>Pay the filing fee ($350)</li></ul>",
+        "resource_type": ["court-forms"],
+        "file_url": "https://example.com/forms/civil-complaint.pdf",
+        "last_updated": "2026-01-15T00:00:00",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80",
+          "alt": "Civil Complaint Form"
+        }
+      }
+    },
+    {
+      "id": "resource-filing-guide",
+      "type": "node.resource",
+      "path": "/resources/pro-se-filing-guide",
+      "values": {
+        "title": "Pro Se Filing Guide",
+        "body": "<p>This guide is designed for individuals who wish to represent themselves (pro se) in court proceedings. It covers the basics of court procedure, filing requirements, and courtroom etiquette.</p><h2>Topics Covered</h2><ul><li>Understanding court procedures</li><li>Filing requirements and deadlines</li><li>Courtroom conduct</li><li>Evidence rules basics</li><li>Appeal procedures</li></ul>",
+        "resource_type": ["legal-guides"],
+        "file_url": "https://example.com/guides/pro-se-guide.pdf",
+        "last_updated": "2025-11-01T00:00:00",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=80",
+          "alt": "Pro Se Filing Guide"
+        }
+      }
+    },
+    {
+      "id": "resource-fee-schedule",
+      "type": "node.resource",
+      "path": "/resources/fee-schedule",
+      "values": {
+        "title": "Court Fee Schedule 2026",
+        "body": "<p>The following fee schedule is effective January 1, 2026. All fees are payable by check, money order, or credit card at the Clerk's Office.</p><h2>Filing Fees</h2><ul><li>Civil Complaint: $350</li><li>Criminal Appeal: $500</li><li>Family Law Petition: $300</li><li>Motion Filing: $75</li><li>Certified Copy: $25 per document</li></ul>",
+        "resource_type": ["fee-schedules"],
+        "last_updated": "2026-01-01T00:00:00",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&q=80",
+          "alt": "Court Fee Schedule"
+        }
+      }
+    },
+    {
+      "id": "resource-appeal-instructions",
+      "type": "node.resource",
+      "path": "/resources/appeal-filing-instructions",
+      "values": {
+        "title": "Appeal Filing Instructions",
+        "body": "<p>This document provides step-by-step instructions for filing an appeal with the District Court of Appeals. Appeals must be filed within 30 days of the final judgment.</p><h2>Steps to File</h2><ul><li>Obtain the Notice of Appeal form</li><li>Complete and file within 30 days</li><li>Order trial court transcripts</li><li>File opening brief within 60 days</li><li>Serve all parties</li></ul>",
+        "resource_type": ["filing-instructions"],
+        "file_url": "https://example.com/instructions/appeal-filing.pdf",
+        "last_updated": "2025-12-15T00:00:00",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=800&q=80",
+          "alt": "Appeal Filing Instructions"
+        }
+      }
+    },
+    {
+      "id": "news-ruling",
+      "type": "node.news",
+      "path": "/news/landmark-privacy-ruling",
+      "values": {
+        "title": "Court Issues Landmark Ruling on Digital Privacy Rights",
+        "body": "<p>The District Court of Appeals today issued a landmark ruling establishing new standards for digital privacy in the workplace. The unanimous decision, authored by Chief Judge Harris, holds that employees have a reasonable expectation of privacy in personal communications on employer-provided devices.</p><p>\"This ruling reflects the evolving nature of privacy in the digital age,\" Chief Judge Harris wrote in the majority opinion.</p><p>The decision is expected to have significant implications for employment law and digital privacy cases nationwide.</p>",
+        "category": ["opinions"],
+        "featured": true,
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=80",
+          "alt": "Court ruling on digital privacy"
+        }
+      }
+    },
+    {
+      "id": "news-efiling",
+      "type": "node.news",
+      "path": "/news/electronic-filing-launch",
+      "values": {
+        "title": "Court Launches New Electronic Filing System",
+        "body": "<p>The District Court of Appeals is pleased to announce the launch of its new electronic filing (e-filing) system. Effective April 1, 2026, all civil and criminal filings may be submitted electronically through the court's secure online portal.</p><p>The new system will reduce processing times, eliminate paper waste, and provide attorneys and litigants with 24/7 access to file documents.</p><p>Training sessions will be held throughout March for attorneys and court staff.</p>",
+        "category": ["announcements"],
+        "featured": true,
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+          "alt": "Electronic filing system"
+        }
+      }
+    },
+    {
+      "id": "news-judicial-conference",
+      "type": "node.news",
+      "path": "/news/annual-judicial-conference",
+      "values": {
+        "title": "Annual Judicial Conference Addresses Court Modernization",
+        "body": "<p>Judges and court administrators gathered this week for the annual Judicial Conference, focusing on modernization efforts and access to justice initiatives. Chief Judge Harris delivered the keynote address highlighting the court's progress in reducing case backlogs and implementing technology solutions.</p><p>Key topics included AI-assisted legal research, remote hearing procedures, and expanding pro bono services.</p>",
+        "category": ["press-releases"],
+        "featured": false,
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=800&q=80",
+          "alt": "Judicial Conference"
+        }
+      }
+    },
+    {
+      "id": "page-about",
+      "type": "node.page",
+      "path": "/about",
+      "values": {
+        "title": "About the District Court of Appeals",
+        "body": "<p>The District Court of Appeals was established in 1891 and serves as the intermediate appellate court for the district. The court reviews decisions from trial courts and administrative agencies, ensuring the consistent and fair application of the law.</p><h2>Our Mission</h2><p>To provide fair, impartial, and timely resolution of disputes through the rule of law, ensuring equal access to justice for all persons.</p><h2>Jurisdiction</h2><p>The court has appellate jurisdiction over civil and criminal cases from the district trial courts, as well as original jurisdiction in certain extraordinary proceedings.</p><h2>Court Values</h2><ul><li><strong>Integrity</strong> - We uphold the highest ethical standards</li><li><strong>Impartiality</strong> - We decide cases without bias or prejudice</li><li><strong>Accessibility</strong> - We ensure the courts are open to all</li><li><strong>Efficiency</strong> - We resolve cases in a timely manner</li></ul>"
+      }
+    },
+    {
+      "id": "page-filing",
+      "type": "node.page",
+      "path": "/filing",
+      "values": {
+        "title": "Filing Information",
+        "body": "<h2>How to File</h2><p>Cases may be filed in person at the Clerk's Office or electronically through our e-filing portal. All filings must comply with the court's Rules of Procedure.</p><h2>Filing Hours</h2><p>The Clerk's Office is open Monday through Friday, 8:30 AM to 4:30 PM. Electronic filings are accepted 24 hours a day, 7 days a week.</p><h2>Filing Requirements</h2><ul><li>All documents must be typed or clearly printed</li><li>Include case number on all subsequent filings</li><li>File the original plus required copies</li><li>Pay applicable filing fees</li><li>Serve all parties as required</li></ul><h2>Fee Waivers</h2><p>Individuals who cannot afford filing fees may apply for a fee waiver. Applications are available at the Clerk's Office or on our website.</p>"
+      }
+    }
+  ]
+}
