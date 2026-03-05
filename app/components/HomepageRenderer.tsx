@@ -28,6 +28,15 @@ const credentials = [
   'ABA Recognized',
 ]
 
+const iconShowcase = [
+  { icon: Scale, label: 'Civil' },
+  { icon: Gavel, label: 'Criminal' },
+  { icon: BookOpen, label: 'Family' },
+  { icon: Shield, label: 'Protection' },
+  { icon: FileText, label: 'Records' },
+  { icon: Landmark, label: 'Appeals' },
+]
+
 export default function HomepageRenderer({ homepageContent }: HomepageRendererProps) {
   return (
     <div className="min-h-screen bg-slate-50">
@@ -98,11 +107,12 @@ export default function HomepageRenderer({ homepageContent }: HomepageRendererPr
       <section className="py-16 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-3 md:grid-cols-6 gap-8">
-            {[Scale, Gavel, BookOpen, Shield, FileText, Landmark].map((Icon, i) => (
-              <div key={i} className="flex flex-col items-center">
+            {iconShowcase.map(({ icon: Icon, label }) => (
+              <div key={label} className="flex flex-col items-center">
                 <div className="w-14 h-14 bg-primary-100 rounded-full flex items-center justify-center mb-2">
                   <Icon className="w-6 h-6 text-primary-600" />
                 </div>
+                <span className="text-xs font-medium text-slate-500">{label}</span>
               </div>
             ))}
           </div>
