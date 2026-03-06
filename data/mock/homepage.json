@@ -19,28 +19,28 @@
               "__typename": "ParagraphStatItem",
               "id": "stat-cases",
               "title": "",
-              "number": "12,000+",
+              "number": "12,000+", "value": "12,000+",
               "label": "Cases Resolved Annually"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-judges",
               "title": "",
-              "number": "24",
+              "number": "24", "value": "24",
               "label": "Sitting Judges"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-divisions",
               "title": "",
-              "number": "4",
+              "number": "4", "value": "4",
               "label": "Court Divisions"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-satisfaction",
               "title": "",
-              "number": "98%",
+              "number": "98%", "value": "98%",
               "label": "Timely Disposition Rate"
             }
           ],
