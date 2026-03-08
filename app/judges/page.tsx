@@ -7,6 +7,7 @@ import Header from '../components/Header'
 import JudgeCard from '../components/JudgeCard'
 
 export const revalidate = 3600
+export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
   title: 'Judges | Westfield District Court',
