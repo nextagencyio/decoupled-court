@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 async function getJudges() {
   try {
     const client = getClient()
-    const { data } = await client.raw(GET_JUDGES, { first: 50 })
+    const data = await client.raw(GET_JUDGES, { first: 50 })
     return data?.nodeJudges?.nodes || []
   } catch (error) {
     console.error('Error fetching judges:', error)
@@ -58,7 +58,7 @@ export default async function JudgesPage() {
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {items.map((item) => (
+              {items.map((item: any) => (
                 <JudgeCard key={item.id} item={item} />
               ))}
             </div>

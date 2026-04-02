@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 async function getDivisions() {
   try {
     const client = getClient()
-    const { data } = await client.raw(GET_DIVISIONS, { first: 50 })
+    const data = await client.raw(GET_DIVISIONS, { first: 50 })
     return data?.nodeDivisions?.nodes || []
   } catch (error) {
     console.error('Error fetching divisions:', error)
@@ -58,7 +58,7 @@ export default async function DivisionsPage() {
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {items.map((item) => (
+              {items.map((item: any) => (
                 <DivisionCard key={item.id} item={item} />
               ))}
             </div>
